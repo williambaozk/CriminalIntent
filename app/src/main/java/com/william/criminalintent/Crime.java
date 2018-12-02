@@ -11,7 +11,7 @@ public class Crime {
 
     public Crime() {
         mId=UUID.randomUUID();
-        mDate=new Date();
+        mDate=new Date();//对象创建时就设置时间
     }
 
     public UUID getId() {

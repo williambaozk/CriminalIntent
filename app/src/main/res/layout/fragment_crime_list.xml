@@ -5,4 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.v7.widget.RecyclerView>
+</android.support.v7.widget.RecyclerView><!--滚动的view,其实只需要设置一个，只需要一个，里面的列表其实是有viewHolder-->
