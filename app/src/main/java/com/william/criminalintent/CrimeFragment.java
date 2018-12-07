@@ -137,4 +137,9 @@ public class CrimeFragment extends Fragment {
         SimpleDateFormat fmt=new SimpleDateFormat("HH:mm");
         mTimeButton.setText(fmt.format(new Date()));
     }
+
+    public void onPause() {
+        super.onPause();
+        CrimeLab.get(getActivity()).updateCrime(mCrime);
+    }
 }

@@ -156,7 +156,8 @@ public class CrimeListFragment extends Fragment {
     private void updateSubtitle() {
         CrimeLab crimeLab=CrimeLab.get(getActivity());
         int crimeCount=crimeLab.getCrimes().size();
-        String subtitle=getString(R.string.subtitle_format,crimeCount);//getString是为了格式化
+//        String subtitle=getString(R.string.subtitle_format,crimeCount);//getString是为了格式化
+        String subtitle=getResources().getQuantityString(R.plurals.subtitle_plural,crimeCount,crimeCount);//处理字符串的复数问题
         if (!mSubtitleVisible) {
             subtitle=null;
         }
